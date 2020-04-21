@@ -19,7 +19,7 @@ public class JuegoRPG {
 
         Personaje a, b;
         a = new Personaje("Larita", "Cazador");
-        b = new Personaje("Dante", "Hechicero");
+        b = new Personaje("Dante", "Hechicero");//AKA el que se muere siempre
         boolean vivos;
         vivos = true;
         System.out.println("El " + a.getClase() + " " + a.getNombre() + " y el " + b.getClase() + " " + b.getNombre() + " van a luchar");
