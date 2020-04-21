@@ -17,19 +17,18 @@ public class JuegoRPG {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        Personaje a, b,c,d,e,f;
-        Grupo g1,g2;
-        a = new Arquero("Larita",'a');
-        b = new Mago("Dante",'o');
-        c = new Guerrero("Mario",'o');
-        d = new Mago("Franco",'o');
-        e = new Arquero("Agente P",'o');
-        f = new Guerrero("La Jesi",'a');
-        g1= new Grupo(a,b,c,"Crusados");
-        g2= new Grupo(f,e,d,"Imperiales");
-        
+        Personaje a, b, c, d, e, f;
+        Grupo g1, g2;
+        a = new Arquero("Larita", 'a');
+        b = new Mago("Dante", 'o');
+        c = new Guerrero("Mario", 'o');
+        d = new Mago("Franco", 'o');
+        e = new Arquero("Agente P", 'o');
+        f = new Guerrero("La Jesi", 'a');
+        g1 = new Grupo(a, b, c, "Crusados");
+        g2 = new Grupo(f, e, d, "Imperiales");
+
         g1.luchaContra(g2);
-        
 
     }
 

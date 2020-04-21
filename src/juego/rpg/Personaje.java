@@ -22,7 +22,7 @@ public class Personaje {
     private String clase;
     private char sexo;
 
-    public Personaje(String nomb,String clas,int dañ,int critic,int hp,int eva,String weapon,char se) {
+    public Personaje(String nomb, String clas, int dañ, int critic, int hp, int eva, String weapon, char se) {
         this.nombre = nomb;
         this.clase = clas;
         this.daño = dañ;
@@ -30,8 +30,8 @@ public class Personaje {
         this.vida = hp;
         this.evasion = eva;
         this.arma = new Arma(weapon);
-        this.sexo=se;
-        
+        this.sexo = se;
+
     }
 
     public int obtenerDaño() {
@@ -91,15 +91,15 @@ public class Personaje {
     public char getSexo() {
         return sexo;
     }
-    public String estado(){
+
+    public String estado() {
         String r;
         if (this.vivo()) {
-            r= this.nombre+" Vida:" +this.vida;
-        }else{
-        r= this.nombre+" Muerto";
+            r = this.nombre + " Vida:" + this.vida;
+        } else {
+            r = this.nombre + " Muerto";
         }
-    return r;
+        return r;
     }
-    
 
 }

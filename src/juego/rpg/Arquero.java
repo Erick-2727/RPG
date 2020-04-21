@@ -5,17 +5,14 @@
  */
 package juego.rpg;
 
-
-
 /**
  *
  * @author Erick
  */
 public class Arquero extends Personaje {
 
-    public Arquero(String nomb,char s) {
-        super(nomb,"Arquer"+s,15,25,50,20,"Arco",s);
+    public Arquero(String nomb, char s) {
+        super(nomb, "Arquer" + s, 15, 25, 50, 20, "Arco", s);
     }
-    
-    
+
 }

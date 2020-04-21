@@ -5,16 +5,14 @@
  */
 package juego.rpg;
 
-
-
 /**
  *
  * @author Erick
  */
 public class Mago extends Personaje {
 
-    public Mago(String nomb,char s) {
-        super(nomb,"Mag"+s,15, 25,50,10,"Hechizo",s);
+    public Mago(String nomb, char s) {
+        super(nomb, "Mag" + s, 15, 25, 50, 10, "Hechizo", s);
     }
-    
+
 }

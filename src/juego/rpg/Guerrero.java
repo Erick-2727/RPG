@@ -5,20 +5,14 @@
  */
 package juego.rpg;
 
-
 /**
  *
  * @author Erick
  */
 public class Guerrero extends Personaje {
 
-    public Guerrero(String nomb,char s) {
-        super(nomb, "Guerrer"+s, 20, 15, 50, 15, "Hacha",s);
+    public Guerrero(String nomb, char s) {
+        super(nomb, "Guerrer" + s, 20, 15, 50, 15, "Hacha", s);
     }
 
-    
-         
-    }
-    
-    
-
+}
