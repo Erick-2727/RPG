@@ -14,7 +14,7 @@ import java.util.Random;
 public class Arma {
 
     private Dado dado;
-    private int dados;
+    private int cantDados;
     private String tipo;
 
     public Arma(String tip) {
@@ -22,22 +22,22 @@ public class Arma {
             case "Hacha":
                 tipo = "Hacha";
                 dado = new Dado(6);
-                dados = 2;
+                cantDados = 2;
                 break;
             case "Hechizo":
                 tipo = "Hechizo";
                 dado = new Dado(3);
-                dados = 3;
+                cantDados = 3;
                 break;
             case "Espada":
                 tipo = "Espada";
                 dado = new Dado(6);;
-                dados = 2;
+                cantDados = 2;
                 break;
             case "Arco":
                 tipo = "Arco";
                 dado = new Dado(2);
-                dados = 4;
+                cantDados = 4;
                 break;
 
         }
@@ -46,7 +46,7 @@ public class Arma {
     public int haceDaño(int dañoPj) {
         
         double b = 0;
-        for (int i = 0; i < this.dados; i++) {
+        for (int i = 0; i < this.cantDados; i++) {
             b = b + this.dado.tirarDado();
         }
         b = b + dañoPj;
