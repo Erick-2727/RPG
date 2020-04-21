@@ -21,41 +21,14 @@ public class Personaje {
     private int evasion;
     private String clase;
 
-    public Personaje(String nomb, String clase) {
+    public Personaje(String nomb,String clas,int dañ,int critic,int hp,int eva,String weapon) {
         this.nombre = nomb;
-        switch (clase) {
-            case "Guerrero":
-                this.clase = "Guerrero";
-                this.daño = 20;
-                this.critico = 15;
-                this.vida = 100;
-                this.evasion = 15;
-                this.arma = new Arma("Hacha");
-                break;
-            case "Hechicero":
-                this.clase = "Hechicero";
-                this.daño = 15;
-                this.critico = 25;
-                this.vida = 100;
-                this.evasion = 10;
-                this.arma = new Arma("Hechizo");
-                break;
-            case "Cazador":
-                this.clase = "Cazador";
-                this.daño = 10;
-                this.critico = 25;
-                this.vida = 100;
-                this.evasion = 20;
-                this.arma = new Arma("Arco");
-                break;
-            case "Asesino":
-                this.daño = 10;
-                this.critico = 15;
-                this.vida = 100;
-                this.evasion = 15;
-                this.arma = new Arma("Hacha");
-                break;
-        }
+        this.clase = clas;
+        this.daño = dañ;
+        this.critico = critic;
+        this.vida = hp;
+        this.evasion = eva;
+        this.arma = new Arma(weapon);
     }
 
     public int obtenerDaño() {
@@ -101,15 +74,15 @@ public class Personaje {
     }
 
     public int getVida() {
-        return this.vida;
+        return vida;
     }
 
     public String getNombre() {
-        return this.nombre;
+        return nombre;
     }
 
     public String getClase() {
-        return this.clase;
+        return clase;
     }
 
 }

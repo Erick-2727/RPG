@@ -18,8 +18,8 @@ public class JuegoRPG {
         // TODO code application logic here
 
         Personaje a, b;
-        a = new Personaje("Larita", "Cazador");
-        b = new Personaje("Dante", "Hechicero");//AKA el que se muere siempre
+        a = new Cazador("Larita");
+        b = new Mago("Dante");
         boolean vivos;
         vivos = true;
         System.out.println("El " + a.getClase() + " " + a.getNombre() + " y el " + b.getClase() + " " + b.getNombre() + " van a luchar");
@@ -34,9 +34,7 @@ public class JuegoRPG {
         } else {
             System.out.println(a.getNombre() + " esta muerto, " + b.getNombre() + " le corto la garganta de aqui a aca");
         }
-        System.out.println("Puto el que lee");
 
     }
-    
 
 }
