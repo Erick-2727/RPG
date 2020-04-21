@@ -5,7 +5,7 @@
  */
 package juego.rpg;
 
-import juego.rpg.Personaje;
+
 
 /**
  *
@@ -13,8 +13,8 @@ import juego.rpg.Personaje;
  */
 public class Mago extends Personaje {
 
-    public Mago(String nomb) {
-        super(nomb,"Mago",15, 25,100,10,"Hechizo");
+    public Mago(String nomb,char s) {
+        super(nomb,"Mag"+s,15, 25,50,10,"Hechizo",s);
     }
     
 }

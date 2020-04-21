@@ -17,23 +17,19 @@ public class JuegoRPG {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        Personaje a, b;
-        a = new Cazador("Larita");
-        b = new Mago("Dante");
-        boolean vivos;
-        vivos = true;
-        System.out.println("El " + a.getClase() + " " + a.getNombre() + " y el " + b.getClase() + " " + b.getNombre() + " van a luchar");
-        while (vivos) {
-            System.out.println(a.atacaA(b));
-            System.out.println(b.atacaA(a));
-            vivos = (a.vivo() && b.vivo());
-        }
-        if (a.vivo()) {
-            System.out.println(b.getNombre() + " esta muerto, " + a.getNombre() + " le corto la garganta de aqui a aca");
-
-        } else {
-            System.out.println(a.getNombre() + " esta muerto, " + b.getNombre() + " le corto la garganta de aqui a aca");
-        }
+        Personaje a, b,c,d,e,f;
+        Grupo g1,g2;
+        a = new Arquero("Larita",'a');
+        b = new Mago("Dante",'o');
+        c = new Guerrero("Mario",'o');
+        d = new Mago("Franco",'o');
+        e = new Arquero("Agente P",'o');
+        f = new Guerrero("La Jesi",'a');
+        g1= new Grupo(a,b,c,"Crusados");
+        g2= new Grupo(f,e,d,"Imperiales");
+        
+        g1.luchaContra(g2);
+        
 
     }
 

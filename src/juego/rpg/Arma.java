@@ -31,7 +31,7 @@ public class Arma {
                 break;
             case "Espada":
                 tipo = "Espada";
-                dado = new Dado(6);;
+                dado = new Dado(6);
                 cantDados = 2;
                 break;
             case "Arco":

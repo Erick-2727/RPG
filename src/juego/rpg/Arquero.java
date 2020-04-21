@@ -5,16 +5,16 @@
  */
 package juego.rpg;
 
-import juego.rpg.Personaje;
+
 
 /**
  *
  * @author Erick
  */
-public class Cazador extends Personaje {
+public class Arquero extends Personaje {
 
-    public Cazador(String nomb) {
-        super(nomb,"Cazador",10,25,100,20,"Arco");
+    public Arquero(String nomb,char s) {
+        super(nomb,"Arquer"+s,15,25,50,20,"Arco",s);
     }
     
     

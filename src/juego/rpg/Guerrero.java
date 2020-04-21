@@ -5,7 +5,6 @@
  */
 package juego.rpg;
 
-import juego.rpg.Personaje;
 
 /**
  *
@@ -13,8 +12,8 @@ import juego.rpg.Personaje;
  */
 public class Guerrero extends Personaje {
 
-    public Guerrero(String nomb) {
-        super(nomb, "Guerrero", 20, 15, 100, 15, "Hacha");
+    public Guerrero(String nomb,char s) {
+        super(nomb, "Guerrer"+s, 20, 15, 50, 15, "Hacha",s);
     }
 
     
